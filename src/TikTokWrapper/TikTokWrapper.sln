@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TikTokWrapper.Core", "TikTokWrapper.Core\TikTokWrapper.Core.csproj", "{7E823ED1-0362-4469-9ED1-DE10420EC79D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E823ED1-0362-4469-9ED1-DE10420EC79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E823ED1-0362-4469-9ED1-DE10420EC79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E823ED1-0362-4469-9ED1-DE10420EC79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E823ED1-0362-4469-9ED1-DE10420EC79D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
