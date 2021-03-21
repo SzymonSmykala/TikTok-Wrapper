@@ -6,6 +6,8 @@
 
     <ItemGroup>
       <PackageReference Include="IronPython" Version="2.7.11" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="System-Web-Helpers.dll" Version="1.0.0" />
     </ItemGroup>
 
 </Project>
