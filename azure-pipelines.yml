@@ -12,10 +12,17 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
+
+
+
 steps:
+- script: dotnet restore dotnet build ./src/TikTokWrapper 
+  displayName: dotnet restore
+
 - script: dotnet build ./src/TikTokWrapper --configuration $(buildConfiguration)
   displayName: 'dotnet build ./src/TikTokWrapper/ $(buildConfiguration)'
 
 - script: |
     pip install TikTokApi
   displayName: 'Install Python TikTokApi'
+  
