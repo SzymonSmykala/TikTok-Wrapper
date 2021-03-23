@@ -12,9 +12,6 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-
-
-
 steps:
 - script: dotnet restore dotnet build ./src/TikTokWrapper 
   displayName: dotnet restore
