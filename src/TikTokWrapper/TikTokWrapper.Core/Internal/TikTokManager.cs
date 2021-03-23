@@ -18,7 +18,7 @@ namespace TikTokWrapper.Core.Internal
         public List<TikTok> GetTrending()
         {
             string error;
-            var result = _runner.Run(@".\trending.py", out error);
+            var result = _runner.Run(@".\scripts\trending.py", out error);
 
             if (!string.IsNullOrEmpty(error))
             {
