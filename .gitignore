@@ -36,4 +36,5 @@ msbuild.wrn
 *.nupkg
 
 *.dll
-TikTok-Wrapper\src\TikTokWrapper\packages
+
+src/TikTokWrapper/packages/
