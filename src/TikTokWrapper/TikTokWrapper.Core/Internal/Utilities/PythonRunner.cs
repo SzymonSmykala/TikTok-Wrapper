@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace TikTokWrapper.Core.Internal.Utilities
 {
-    internal class PythonRunner
+    internal class PythonRunner : IPythonRunner
     {
         public readonly string _filePythonExePath;
 

@@ -10,4 +10,10 @@
       <PackageReference Include="System-Web-Helpers.dll" Version="1.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="trending.py">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
