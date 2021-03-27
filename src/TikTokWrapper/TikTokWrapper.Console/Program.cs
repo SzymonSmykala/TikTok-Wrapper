@@ -8,7 +8,7 @@ namespace TikTokWrapper.WindowsConsole
         static void Main(string[] args)
         {
            ITikTokManagerFactory factory = new TikTokManagerFactory();
-           var manager = factory.Create(@"C:\Users\Szymon\AppData\Local\Programs\Python\Python39\python.exe");
+           var manager = factory.Create();
            var trending = manager.GetTrending();
         }
     }

@@ -3,5 +3,6 @@
     public interface ITikTokManagerFactory
     {
         ITikTokManager Create(string pythonExePath);
+        ITikTokManager Create();
     }
 }
