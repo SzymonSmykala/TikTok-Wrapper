@@ -5,15 +5,34 @@
 	<LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="scripts\trending.py" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="scripts\trending.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
       <PackageReference Include="System-Web-Helpers.dll" Version="1.0.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="scripts\trending.py">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <Compile Update="Properties\Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Properties\Resources.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>

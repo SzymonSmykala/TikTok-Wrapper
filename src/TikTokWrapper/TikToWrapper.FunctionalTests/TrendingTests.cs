@@ -28,6 +28,7 @@ namespace TikToWrapper.FunctionalTests
 
             // Assert
             actual.Count.Should().Be(expectedNumberOfTikToks);
+            actual.ForEach(x => x.id.Should().NotBeNullOrEmpty());
         }
         
     }
